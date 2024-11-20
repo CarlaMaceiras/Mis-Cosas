@@ -1,0 +1,7 @@
+.region-primary-menu {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}

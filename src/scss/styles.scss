@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+// Config.
+@import "vars/custom";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+// Typography.
+@import "typography/fonts";
+
+// Boostrap.
+@import "bootstrap/init";
+
+// Mixins.
+@import "mixins/bg";
+@import "mixins/buttons";
+@import "mixins/container";
+@import "mixins/filter-mobile";
+@import "mixins/icon-link";
+@import "mixins/icons";
+@import "mixins/layout";
+@import "mixins/main-image";
+@import "mixins/summary";
+@import "mixins/text";
+@import "mixins/headings";
+
+// Base.
+@import "base/general";
+
+// Atoms.
+@import "atoms/alert";
+@import "atoms/blockquote";
+@import "atoms/breadcrumb";
+@import "atoms/btn";
+@import "atoms/checkbox";
+@import "atoms/choices";
+@import "atoms/dropdown-link";
+@import "atoms/dropdown-menu";
+@import "atoms/figcaption";
+@import "atoms/figure";
+@import "atoms/filter-toggler";
+@import "atoms/form-control";
+@import "atoms/headings";
+@import "atoms/links";
+@import "atoms/navbar-collapse";
+@import "atoms/navbar-toggler";
+@import "atoms/open-readspeaker";
+@import "atoms/page-title";
+@import "atoms/pager";
+@import "atoms/paragraph";
+@import "atoms/selection";
+@import "atoms/site-logo";
+@import "atoms/site-name";
+@import "atoms/swiper-arrows";
+@import "atoms/swiper-bullets";
+@import "atoms/table";
+@import "atoms/throbber";
+@import "atoms/view-header";
+
+// Molecules.
+@import "molecules/cookies";
+@import "molecules/blocks/block-custom-common-features-logo-xunta";
+@import "molecules/blocks/block-custom-common-features-social-networks";
+@import "molecules/blocks/block-search";
+@import "molecules/blocks/block-system-branding";
+@import "molecules/blocks/block-xunta-footer";
+@import "molecules/ckeditor/grid";
+@import "molecules/headings";
+@import "molecules/navigation/language-switcher";
+@import "molecules/navigation/menu-shortcuts";
+@import "molecules/navigation/navbar";
+@import "molecules/navigation/navbar-collapse";
+@import "molecules/navigation/tabs";
+@import "molecules/navigation/footer-menu";
+@import "molecules/navigation/interest-links";
+@import "molecules/node-preview-form";
+@import "molecules/paragraphs/paragraph-type-highlights-group";
+@import "molecules/paragraphs/paragraph-type-image-gallery";
+@import "molecules/paragraphs/paragraph-type-links";
+@import "molecules/paragraphs/paragraph-type-text";
+@import "molecules/paragraphs/paragraph-type-views";
+@import "molecules/regions/region-breadcrumb";
+@import "molecules/regions/footer-secondary-menu";
+@import "molecules/regions/footer-above";
+@import "molecules/regions/region-header";
+@import "molecules/regions/region-primary-menu";
+@import "molecules/regions/xunta-footer";
+@import "molecules/sizes/size-full";
+@import "molecules/sizes/size-l";
+@import "molecules/sizes/size-m";
+@import "molecules/sizes/size-s";
+@import "molecules/table-wrapper";
+@import "molecules/top-collapse";
+@import "molecules/ui-dialog";
+@import "molecules/viewsreference";
+@import "molecules/views/views-block-list";
+@import "molecules/views/views-exposed-form";
+@import "molecules/views/views-list";
+@import "molecules/wysiwyg-lists";
+
+// Organisms.
+@import "organisms/contact";
+@import "organisms/error_pages";
+@import "organisms/fixed-header";
+@import "organisms/footer";
+@import "organisms/frontpage";
+@import "organisms/header";
+@import "organisms/maintenance";
+@import "organisms/search";
+@import "organisms/sitemap";
+
+// Templates.
+
+// Utilities.

@@ -1,0 +1,88 @@
+.block-open-readspeaker {
+  display: flex;
+  justify-content: flex-end;
+
+  .open-readspeaker-ui {
+
+    .rsbtn.rsexpanded .rsbtn_exp {
+      display: table;
+    }
+
+    .rsbtn .rsbtn_play:hover .rsbtn_right::before,
+    .rsbtn .rsbtn_tooltoggle:focus span,
+    .rsbtn .rsbtn_tooltoggle:hover span,
+    .rsbtn_toollist .rsbtn_tool:hover .rsicn,
+    .rsbtn .rsbtn_tool .rs_minitoggler span,
+    .rsbtn_exp_inner .rsicn:active,
+    .rsbtn .rsbtn_play .rsbtn_left .rsbtn_text::after,
+    .rsbtn .rsbtn_play .rsbtn_right.rsplay,
+    .rsbtn .rsbtn_status_overlay .rsbtn_loaderror,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_stop:hover span.rsicn,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_closer:hover span.rsicn,
+    .rsbtn .rsbtn_toolpanel.vertical .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer ul.rsbtn_toollist li button.rsbtn_tool:hover span,
+    .rsbtn .rsbtn_tooltoggle:focus,
+    .rsbtn .rsbtn_toolpanel.vertical .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer ul.rsbtn_toollist li button.rsbtn_tool .rs_minitoggler span.off-icon,
+    .rsbtn .rsbtn_toolpanel.vertical .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer ul.rsbtn_toollist li button.rsbtn_tool .rs_minitoggler span.on-icon,
+    .rsbtn .open-readspeaker-button.rsbtn_play:focus .rsimg .rsbtn_text::before,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_player_item:hover span::before {
+      color: $blue;
+    }
+
+    .rsbtn .rsbtn_play .rsbtn_left .rsbtn_text::before,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_stop span.rsicn,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_pause span.rsicn,
+    .rsbtn span,
+    .rsbtn_right,
+    .rsbtn_left {
+      color: $blue-secondary-xunta;
+    }
+
+    .rsbtn_tooltoggle:focus,
+    .rsbtn_exp_inner .rsbtn_rewind:focus,
+    .rsbtn .rsbtn_exp .rsbtn_exp_inner .rsbtn_player_item:focus,
+    button.rsbtn_tooltoggle:focus,
+    .rsbtn .rsbtn_play:focus {
+      background-color: $blue-secondary-xunta;
+    }
+
+    .rsbtn .rsbtn_toolpanel.vertical .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer ul.rsbtn_toollist li button.rsbtn_tool .rs_minitoggler {
+      border: 0;
+    }
+
+  }
+}
+
+#rs-controlpanel.unselectable {
+  .rsicn.rsicn-logo::after,
+  button.rs-controlpanel-btn:focus span,
+  button.rs-controlpanel-scroll-toggler span.rs-controlpanel-scroll-state,
+  button.rs-controlpanel-scroll-toggler.enabled span.rs-controlpanel-scroll-state,
+  button.rs-controlpanel-scroll-toggler:focus span.rs-controlpanel-scroll-state,
+  button.rs-controlpanel-scroll-toggler.enabled:focus span.rs-controlpanel-scroll-state {
+    color: $blue;
+  }
+
+  .rsicn.rsicn-logo::before,
+  button.rs-controlpanel-btn,
+  button.rs-controlpanel-btn.rs-controlpanel-playpause {
+    color: $blue-secondary-xunta;
+  }
+
+  button.rs-controlpanel-btn:focus,
+  button.rs-controlpanel-scroll-toggler:focus {
+    background-color: $blue-secondary-xunta;
+  }
+}
+
+.rspopup {
+  .rspopup_btn::before,
+  div.rspopup_btn.rspopup_play::before {
+    color: $blue-secondary-xunta;
+  }
+
+  div.rspopup_btn.rspopup_play:hover::before,
+  .rspopup_btn:hover::before,
+  div.rspopup_btn.rspopup_play::after {
+    color: $blue;
+  }
+}

@@ -1,0 +1,30 @@
+.node-preview-container {
+  background-color: transparentize($blue-100, 0.05);
+  padding: 1rem;
+  box-shadow: 0 2px 3px transparentize($black, 0.85);
+
+  div,
+  label {
+    display: block;
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    #edit-backlink {
+      flex: 1;
+    }
+
+    .form-type-select {
+      margin: 0 0 0 2rem;
+      min-width: 300px;
+
+      select {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+}

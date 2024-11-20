@@ -1,0 +1,21 @@
+.text-formatted {
+  ul {
+    li {
+      padding-left: 0.5rem;
+
+      &::marker {
+        @include bootstrap-icon("cursor-fill");
+        font-size: 0.8rem;
+      }
+    }
+
+    ul {
+      li {
+        &::marker {
+          @include bootstrap-icon("cursor");
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

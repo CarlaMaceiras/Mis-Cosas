@@ -1,0 +1,11 @@
+.table-wrapper {
+  border: 1px solid $gray-300;
+  border-radius: 15px;
+  box-shadow: $box-shadow;
+  overflow: auto;
+  margin-bottom: $paragraph-margin-bottom * 2;
+
+  table {
+    margin-bottom: 0;
+  }
+}

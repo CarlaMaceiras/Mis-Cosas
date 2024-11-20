@@ -1,0 +1,47 @@
+.language-switcher-language-url {
+  &.contextual-region {
+    position: unset;
+  }
+  .bi-globe2 {
+    color: white;
+  }
+}
+
+.block-language {
+  @include font-size($font-size-base * 0.7);
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+
+  .links {
+    display: flex;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding-right: calc(var(--bs-gutter-x) / 2);
+
+      a {
+        color: $white;
+        display: block;
+        padding: 0.3rem 0.5rem 0.1rem 0.5rem;
+
+        &.is-active, &:hover, &:focus {
+          background: $primary;
+          text-decoration: none;
+        }
+
+        &.is-active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .region-header & {
+    margin: 0;
+
+    .links {
+      margin-bottom: 0;
+    }
+  }
+}

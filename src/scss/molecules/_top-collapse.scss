@@ -1,0 +1,101 @@
+.top-collapse-link {
+  color: $white;
+  font-size: 1.7rem;
+  line-height: 1rem;
+  padding: 0 0.25rem;
+
+  @include media-breakpoint-up(lg) {
+    color: $link-color;
+
+    .scrolled & {
+      color: $white;
+    }
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.top-collapse-wrapper {
+  background-color: $secondary;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  left: 50%;
+  margin-left: -50vw;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+
+  > div {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+  }
+
+  .top-collapse-link {
+    &:hover,
+    &:focus {
+      .close-icon {
+        span {
+          &:first-child {
+            left: 7px;
+            top: 3px;
+            width: 10px;
+          }
+
+          &:nth-child(2) {
+            height: 2px;
+          }
+
+          &:last-child {
+            left: 1px;
+            top: 3px;
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    .close-icon {
+      border: 2px solid transparent;
+      border-radius: 40px;
+      box-sizing: border-box;
+      color: $white;
+      display: block;
+      height: 22px;
+      position: relative;
+      transform: scale(1.9);
+      width: 22px;
+
+      span {
+        background: currentColor;
+        border-radius: 5px;
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 1px;
+        position: absolute;
+        top: 8px;
+        transform: rotate(45deg);
+        transition: $transition-base;
+        width: 16px;
+
+        &:nth-child(2) {
+          height: 0;
+          left: 2px;
+          transform: rotate(90deg);
+          width: 14px;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.block-custom-content-social-networks {
+  .col-social-networks {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      margin: 1rem 1rem;
+
+      @include media-breakpoint-up(lg) {
+        margin: 1rem 1.5rem;
+      }
+
+      img {
+        transform: scale(1);
+        transition: $transition-base;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

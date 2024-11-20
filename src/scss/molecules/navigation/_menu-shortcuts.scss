@@ -1,0 +1,31 @@
+#block-custom-theme-main-menu-shortcuts {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-base * 0.9;
+    margin: 0;
+
+    .nav-item {
+      list-style: none;
+
+      &.menu-item--active-trail {
+        > .nav-link {
+          background-color: $secondary;
+        }
+      }
+
+      .nav-link {
+        border-radius: .5rem;
+        color: $white;
+        cursor: pointer;
+        padding: 2px 20px 0;
+        text-transform: uppercase;
+
+        &.is-active,
+        &:hover, &:active, &:focus {
+          background: $secondary;
+        }
+      }
+    }
+  }
+}

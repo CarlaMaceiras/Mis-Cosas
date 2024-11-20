@@ -1,0 +1,19 @@
+@mixin main-title {
+  font-size: calc(1.3725rem + 1.47vw);
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(xl) {
+    font-size: $h1-font-size;
+  }
+}
+
+@mixin section-title {
+  color: $blue;
+  font-size: calc(1.1rem + 1.1vw);
+}
+
+@mixin subsection-title {
+  color: $blue;
+  font-size: calc(0.9rem + 0.8vw);
+}

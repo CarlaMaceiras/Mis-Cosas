@@ -1,0 +1,7 @@
+@mixin full-width-container {
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}

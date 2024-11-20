@@ -1,0 +1,26 @@
+nav.tabs {
+  margin-top: 1rem;
+
+  ul {
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+    margin-bottom: $paragraph-margin-bottom * 2;
+
+    li {
+      margin: 0;
+
+      a {
+        border: 3px solid $white;
+        border-radius: 8px;
+        padding: 0.4rem 0.8rem 0.3rem;
+
+        &.is-active {
+          background-color: $secondary;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          color: white;
+        }
+      }
+    }
+  }
+}

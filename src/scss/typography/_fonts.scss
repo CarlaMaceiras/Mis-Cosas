@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'XuntaSans';
+  src: url('../../fonts/XuntaSans-Regular.woff2') format('woff2'),
+  url('../../fonts/XuntaSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'XuntaSans';
+  src: url('../../fonts/XuntaSans-Bold.woff2') format('woff2'),
+  url('../../fonts/XuntaSans-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'XuntaSans';
+  src: url('../../fonts/XuntaSans-Italic.woff2') format('woff2'),
+  url('../../fonts/XuntaSans-Italic.woff') format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'XuntaSans';
+  src: url('../../fonts/XuntaSans-BoldItalic.woff2') format('woff2'),
+  url('../../fonts/XuntaSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}

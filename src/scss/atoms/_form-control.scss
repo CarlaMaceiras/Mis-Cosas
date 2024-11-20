@@ -1,0 +1,15 @@
+.form-control {
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+  padding: 10px 14px;
+
+  &.form-text {
+    margin-top: 0;
+  }
+}
+
+.form-item .form-control::placeholder,
+::placeholder {
+  color: $gray-500;
+  opacity: 1;
+}

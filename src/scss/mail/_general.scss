@@ -1,0 +1,44 @@
+* {
+  color: $secondary;
+  font-family: XuntaSans, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body {
+  background: $gray-100;
+}
+
+a {
+  color: $primary;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 0 0 5px;
+}
+
+table {
+  border: 0;
+  width: 100%;
+}
+
+.separator {
+  border: 0;
+  width: 100%;
+
+  tr {
+    td {
+      height: 15px;
+    }
+  }
+}

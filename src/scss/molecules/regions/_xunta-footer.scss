@@ -1,0 +1,17 @@
+.xunta-footer {
+  color: $white;
+  position: relative;
+  @include afterBackground($primary);
+
+  @include media-breakpoint-up(lg) {
+    height: $xunta-footer-height;
+  }
+
+  > .container-fluid {
+    height: 100%;
+
+    > .region {
+      height: 100%;
+    }
+  }
+}

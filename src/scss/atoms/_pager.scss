@@ -1,0 +1,40 @@
+.pager {
+  .pager__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding-left: 0;
+
+    .pager__item {
+      margin: 0 5px 10px;
+      padding: 0;
+
+      &.is-active {
+        a {
+          background-color: $primary;
+          cursor: default;
+          pointer-events: none;
+        }
+      }
+
+      a {
+        align-items: center;
+        background-color: $secondary;
+        border-radius: 100%;
+        color: $white;
+        display: flex;
+        font-size: $font-size-base * 0.9;
+        height: 38px;
+        justify-content: center;
+        width: 38px;
+
+        &:hover, &:focus, &:active {
+          background-color: $primary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

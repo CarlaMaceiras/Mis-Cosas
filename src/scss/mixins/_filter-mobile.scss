@@ -1,0 +1,95 @@
+@mixin filter-icon-mobile($size: "xl") {
+  cursor: pointer;
+
+  @include media-breakpoint-down($size) {
+    align-items: center;
+    background-color: $blue;
+    border-radius: 50%;
+    bottom: 2vh;
+    box-shadow: 1px 7px 10px rgb(0 0 0 / 50%);
+    color: $white;
+    display: flex;
+    font-size: 1.5rem;
+    height: 50px;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    transition: $transition-base;
+    width: 50px;
+    z-index: 602;
+
+    i::before {
+      vertical-align: middle;
+    }
+
+    + .views-exposed-form {
+      background-color: $white;
+      border-radius: 15px;
+      bottom: -100vh;
+      box-shadow: 0 -12px 17px rgb(0 0 0 / 15%);
+      right: 3%;
+      max-height: 88vh;
+      opacity: 0;
+      overflow: scroll;
+      padding: 18px;
+      position: fixed;
+      transition: all .3s ease;
+      width: 94vw;
+      z-index: 601;
+    }
+  }
+
+  @include media-breakpoint-up($size) {
+    display: none;
+
+    + .views-exposed-form {
+      display: block !important;
+    }
+  }
+
+  &.backtotop-visible {
+    @include media-breakpoint-down($size) {
+      bottom: 10vh;
+    }
+  }
+
+
+  &.is-actived {
+    background-color: $black;
+
+    @include media-breakpoint-down($size) {
+      bottom: 2vh;
+    }
+
+    i::before {
+      @include bootstrap-icon("x-lg");
+      vertical-align: middle;
+    }
+
+    + .views-exposed-form {
+      @include media-breakpoint-down($size) {
+        bottom: 1rem;
+        opacity: 1;
+        transition: all .3s ease;
+
+        + .background-modal {
+          display: block;
+          opacity: 1;
+          transition: all .2s ease;
+
+          &:before {
+            content: '';
+            background-color: $black;
+            height: 100vh;
+            left: 0;
+            opacity: 0.5;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 99;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.paragraph--type--highlights-group {
+  .component-highlight {
+    &.component-highlight--size-s  {
+      .title {
+        margin-bottom: 0;
+      }
+    }
+
+    &:not(:has(.component-highlight--has-image)) {
+      &.component-background-color-blue-25,
+      &.component-background-color-blue-10,
+      &.component-background-color-gray {
+        .text-wrapper {
+          color: $black;
+        }      
+      }
+
+      &:has(a) {
+        &::before {
+          filter: brightness(1);
+          transition: $transition-base;
+        }
+
+        &:hover {
+          &::before  {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+
+    a {
+      img {
+        filter: brightness(1);
+        transition: $transition-base;
+      }
+
+      &:hover {
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}

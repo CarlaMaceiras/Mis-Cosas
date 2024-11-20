@@ -1,0 +1,33 @@
+.views-block-list {
+  .view-content {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .views-row {
+      .news-item > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+      }
+
+      .block-field-blocknodenewsfield-images {
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

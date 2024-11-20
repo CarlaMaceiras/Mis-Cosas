@@ -1,0 +1,121 @@
+$environment-indicator-height: 37px;
+body {
+  header {
+    .region-primary-menu,
+    .region-logo,
+    .navbar {
+      transition: all .45s;
+    }
+
+    .region-logo {
+      img {
+        transition: all .45s;
+      }
+    }
+  }
+
+  &.scrolled {
+    &:not(.has-environment-indicator) {
+      .header {
+        top: 0;
+      }
+    }
+
+    &.toolbar-horizontal {
+      .header {
+        top: 59px;
+      }
+    }
+
+    &.toolbar-vertical {
+      .header {
+        top: 39px;
+      }
+    }
+
+    main {
+      @include media-breakpoint-up(lg) {
+        margin-top: 30px !important;
+      }
+    }
+
+    .header {
+      position: sticky;
+      z-index: 500;
+
+      @include media-breakpoint-up(lg) {
+        .header-content {
+          position: relative;
+
+          .region-header {
+            height: 72px;
+            transition: all .45s;
+
+            &::after {
+              background-color: #007bc4;
+              content: "";
+              height: 100%;
+              left: 50%;
+              margin-left: -50vw;
+              position: absolute;
+              top: 0;
+              width: 100vw;
+              z-index: -1
+            }
+
+            .site-logo {
+              img {
+                filter: brightness(0) invert(1);
+                height: 36px;
+                transition: all .45s;
+              }
+            }
+          }
+
+          .navbar {
+            padding: 0;
+
+            > button.navbar-toggler {
+              bottom: 18px;
+              position: absolute;
+              right: 0;
+            }
+
+            .region-primary-menu {
+              border: 0;
+              height: 0;
+              opacity: 0;
+              overflow: hidden;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.scrolled.has-environment-indicator {
+  .header {
+    top: $environment-indicator-height;
+  }
+}
+
+#environment-indicator {
+  height: $environment-indicator-height;
+  position: sticky;
+  top: 0;
+  z-index: 600;
+}
+
+@include media-breakpoint-down(lg) {
+  .header {
+    .has-environment-indicator.scrolled & {
+      top: $environment-indicator-height;
+    }
+
+    .toolbar-fixed & {
+      top: calc(var(--ginToolbarHeight));
+    }
+  }
+}

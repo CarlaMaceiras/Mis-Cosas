@@ -1,0 +1,70 @@
+.path-contact {
+  .block-system-main-block {
+    @include container;
+  }
+
+  .contact-message-contact-form {
+    margin-bottom: $default-margin-bottom-blocks;
+    position: relative;
+    padding-right: unset !important;
+
+    @include media-breakpoint-up(md) {
+      padding-left: 300px !important;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-left: 425px !important;
+    }
+
+    &:before {
+      @include bootstrap-icon("envelope-fill");
+      align-items: center;
+      background-size: cover;
+      color: $white;
+      display: flex;
+      font-size: 8rem;
+      height: 305px;
+      justify-content: center;
+      margin: 0 auto 3rem auto;
+      transform: rotate(-15deg);
+      width: 275px;
+
+      @include media-breakpoint-up(md) {
+        left: 0;
+        position: absolute;
+        top: 5rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        height: 416px;
+        top: 10rem;
+        width: 375px;
+      }
+    }
+  }
+
+  .block-custom-content-more-info-contact {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    position: relative;
+
+    &:after {
+      @include full-width-container;
+      background-color: $gray-200;
+      content: " ";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    .item-list {
+      @extend .text-formatted;
+    }
+  }
+}
+
+.contact-message-contact-form {
+  .form-control {
+    border: 1px solid $blue-500;
+  }
+}

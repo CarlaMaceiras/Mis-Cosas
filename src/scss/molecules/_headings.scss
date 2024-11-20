@@ -1,0 +1,9 @@
+.block-page-title-block {
+  h1 {
+    @include main-title;
+  }
+}
+
+h2 {
+  @include section-title;
+}

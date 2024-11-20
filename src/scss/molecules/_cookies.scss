@@ -1,0 +1,13 @@
+.cookiesjsr--app {
+  .cookiesjsr-banner--text {
+    a {
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

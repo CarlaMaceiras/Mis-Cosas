@@ -1,0 +1,38 @@
+.grid-wrapper {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-element {
+    background: $gray-200;
+    border-radius: $border-radius;
+    padding: 1rem;
+
+    ul {
+      font-size: $font-size-base * 0.9;
+      list-style: none;
+      padding-left: 0.75rem;
+
+      li {
+        padding-left: 0;
+
+        &::marker {
+          content: "";
+        }
+      }
+    }
+
+    p:last-child, ul:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

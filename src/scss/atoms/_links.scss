@@ -1,0 +1,8 @@
+a {
+  transition: $transition-base;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 5px;
+  }
+}

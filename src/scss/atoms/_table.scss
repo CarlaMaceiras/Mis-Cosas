@@ -1,0 +1,44 @@
+table {
+  border: 0;
+  margin-bottom: $paragraph-margin-bottom;
+  width: 100%;
+
+  tr {
+    &:first-child {
+      th, td {
+        border-top: 0;
+      }
+    }
+
+    &:last-child {
+      th, td {
+        border-bottom: 0;
+      }
+    }
+
+    &:hover {
+      td {
+        background-color: $blue-100;
+      }
+    }
+
+    th, td {
+      border: 1px solid $gray-300;
+      padding: 1rem;
+      transition: $transition-base;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    th {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+}

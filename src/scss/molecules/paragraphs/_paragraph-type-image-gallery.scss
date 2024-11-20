@@ -1,0 +1,19 @@
+.paragraph--type--image-gallery {
+    .component-gallery {
+        article {
+            border: 0;
+            padding: 0.5rem;
+
+            &:hover {
+                img {
+                    border-color: transparent;
+                }
+            }
+
+            img {
+                border: 1px solid $white;
+                transition: $transition-base;
+            }
+        }
+    }
+}

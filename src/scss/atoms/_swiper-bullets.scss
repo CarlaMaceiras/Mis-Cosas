@@ -1,0 +1,132 @@
+.swiper-pagination-bullets {   
+  bottom: unset !important;
+  position: relative;
+  z-index: 10;
+  gap: 0 !important;
+  align-items: center;
+
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    margin-top: 4px;
+    opacity: 1;
+    background-color: $secondary;
+    height: 6px;
+    width: 6px;
+    transition: $transition-base;
+    margin: 6px !important;
+    
+    &-active {
+      height: 12px;
+      width: 12px;
+      margin: 4px 0 2px !important;
+    }
+
+    &:hover {
+      height: 12px;
+      width: 12px;
+      margin: 4px 0 2px !important;
+
+
+      &.swiper-pagination-bullet-active {
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+}
+
+/*.paragraph--type--slider {
+  &.paragraph-bg-primary {
+    .swiper-pagination-bullets {       
+      .swiper-pagination-bullet {
+        background-color: $blue-500;
+        
+        &-active {
+          background-color: $white;
+        }
+    
+        &:hover {
+          background-color: $secondary;
+    
+          &.swiper-pagination-bullet-active {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &.paragraph-bg-secondary {
+    .swiper-pagination-bullets {       
+      .swiper-pagination-bullet {
+        background-color: $blue-200;
+        
+        &-active {
+          background-color: $blue;
+        }
+    
+        &:hover {
+          background-color: $white;
+    
+          &.swiper-pagination-bullet-active {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &.paragraph-bg-primary-50 {
+    .swiper-pagination-bullets {       
+      .swiper-pagination-bullet {    
+        &:hover {
+          background-color: $secondary;
+    
+          &.swiper-pagination-bullet-active {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &.paragraph-bg-primary-25 {
+    .swiper-pagination-bullets {       
+      .swiper-pagination-bullet {
+        background-color: $white;
+        
+        &-active {
+          background-color: $blue;
+        }
+
+        &:hover {
+          background-color: $blue-500;
+    
+          &.swiper-pagination-bullet-active {
+            background-color: $blue-500;
+          }
+        }
+      }
+    }
+  }
+
+  &.paragraph-bg-primary-10 {
+    .swiper-pagination-bullets {       
+      .swiper-pagination-bullet {
+        background-color: $blue-500;
+        
+        &-active {
+          background-color: $blue;
+        }
+    
+        &:hover {
+          background-color: $secondary;
+    
+          &.swiper-pagination-bullet-active {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}*/

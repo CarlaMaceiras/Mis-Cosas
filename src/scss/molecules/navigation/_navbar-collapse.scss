@@ -1,0 +1,99 @@
+.navbar-collapse {
+  .navbar-toggler {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+
+    &:hover {
+      .navbar-toggler-icon-animated {
+        span {
+          &:nth-child(1),
+          &:nth-child(3) {
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &:focus {
+      background-color: $primary;
+    }
+
+    .navbar-toggler-icon-animated {
+      span {
+        background: $white;
+
+        &:nth-child(1) {
+          top: 11px;
+          transform: rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          left: -60px;
+          opacity: 0;
+          top: 10px;
+        }
+
+        &:nth-child(3) {
+          top: 11px;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin: 0 0 2rem 0;
+    width: 100%;
+
+    .nav-item {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+
+      &.menu-item--active-trail {
+        > .nav-link {
+          background-color: $primary;
+          border-radius: .5rem;
+        }
+      }
+
+      .nav-item {
+        .dropdown-link {
+          margin-left: 0.25rem;
+        }
+      }
+
+      .nav-link {
+        cursor: pointer;
+        flex: 1;
+        padding: 0.3rem 0.25rem 0.15rem 0.25rem;
+        transition: $transition-base;
+
+        &:hover,
+        &.is-active,
+        &.is-selected {
+          background-color: $primary;
+          border-radius: .5rem;
+        }
+      }
+    }
+
+    > .nav-item {
+      border-bottom: 1px solid $white;
+      padding-bottom: 0.5rem;
+      padding-top: 0.45rem;
+    }
+  }
+
+  .block-custom-common-features-logo-xunta {
+    text-align: center;
+
+    img {
+      height: 38px;
+    }
+  }
+
+}

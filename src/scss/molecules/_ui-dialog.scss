@@ -1,0 +1,49 @@
+body {
+  .ui-dialog.ui-widget {
+    border: 0;
+    border-radius: $border-radius;
+    box-shadow: 0 0 5px 1px transparentize($black, 0.85);
+    font-size: $font-size-base * 0.85;
+    overflow: hidden;
+
+    .ui-dialog-titlebar {
+      background-color: $primary;
+      border: 0;
+      color: $white;
+    }
+
+    .ui-dialog-content {
+      padding: 1rem;
+
+      .table-wrapper {
+        border-radius: 0;
+      }
+    }
+
+    .ui-dialog-titlebar-close {
+      height: 22px;
+      right: 0.75rem;
+      width: 22px;
+
+      &:hover {
+        .ui-icon {
+          color: $secondary;
+        }
+      }
+
+      .ui-icon {
+        background: none;
+        color: $white;
+        height: auto;
+        overflow: visible;
+        text-indent: 0;
+        width: auto;
+
+        &:after {
+          @include bootstrap-icon("x-square-fill");
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

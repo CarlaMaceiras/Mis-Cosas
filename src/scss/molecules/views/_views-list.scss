@@ -1,0 +1,4 @@
+.views-list {
+  @extend .views-block-list;
+  margin-bottom: $default-margin-bottom-blocks;
+}

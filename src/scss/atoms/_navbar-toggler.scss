@@ -1,0 +1,63 @@
+.navbar-toggler {
+  border: 0;
+  border-radius: 0;
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  transition: $transition-base;
+
+  &:hover {
+    .navbar-toggler-icon-animated {
+      span {
+        &:nth-child(1),
+        &:nth-child(3) {
+          left: 25%;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &:focus {
+    background-color: $secondary;
+
+    .navbar-toggler-icon-animated {
+      span {
+        background-color: $white;
+      }
+    }
+  }
+
+  .navbar-toggler-icon-animated {
+    height: 22px;
+    position: relative;
+    transition: $transition-base;
+    width: 30px;
+
+    span {
+      background: $white;
+      border-radius: 10px;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: $transition-base;
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        .scrolled & {
+          background: $white;
+        }
+      }
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+  }
+}

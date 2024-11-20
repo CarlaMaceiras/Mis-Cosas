@@ -1,0 +1,44 @@
+.navbar-collapse {
+  background: $secondary;
+  color: $white;
+  display: none;
+  height: 100vh !important;
+  max-width: 460px;
+  overflow-y: auto;
+  padding: $container-padding-x * 1.5;
+  position: fixed;
+  right: -460px;
+  top: 0;
+  transition: right 0.5s ease-out;
+  width: 100%;
+  z-index: 1000;
+
+  &.collapsing {
+    display: block !important;
+    transition: height 0s;
+  }
+
+  &.show {
+    display: block !important;
+    right: 0;
+
+    @if $enable-shadows {
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    @at-root .has-environment-indicator & {
+      height: calc(100vh - 37px) !important;
+      top: 37px;
+    }
+
+    @at-root .toolbar-horizontal & {
+      height: calc(100vh - 60px) !important;
+      top: 60px;
+    }
+
+    @at-root .toolbar-vertical & {
+      height: calc(100vh - 39px) !important;
+      top: 39px;
+    }
+  }
+}

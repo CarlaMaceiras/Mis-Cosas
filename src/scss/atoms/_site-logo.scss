@@ -1,0 +1,12 @@
+.site-logo {
+  margin-right: 2rem;
+
+  img {
+    height: 36px;
+    max-width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      height: 48px;
+    }
+  }
+}

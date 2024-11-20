@@ -1,0 +1,75 @@
+.block-amtega-features-xunta-footer {
+  font-size: $xunta-footer-font-size;
+  height: 100%;
+  padding: 25px 0 20px 0;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $xunta-footer-font-size-lg;
+    padding: 0;
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  a {
+    color: $white;
+    display: inline-block;
+
+    &:focus-visible {
+      outline: 2px solid $white;
+      outline-offset: 2px;
+    }
+
+    img {
+      height: $xunta-footer-image-height;
+
+      @include media-breakpoint-up(lg) {
+        height: $xunta-footer-image-height-lg;
+      }
+    }
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+
+    .menu-item {
+      padding: 0;
+
+      &:after {
+        @include media-breakpoint-up(lg) {
+          content: "-";
+          padding: 0 0.5em 0 0.25em;
+        }
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        padding: 3px 0;
+
+        &.is-active {
+          color: $white;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.menu--interest-links {
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 60%;
+  }
+
+  .menu {
+    border-left: 3px solid $blue;
+    margin: 15px 0;
+
+    @include media-breakpoint-down(lg) {
+      border-left: none;
+      border-top: 3px solid $blue;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    .menu-item {
+      display: flex;
+      font-size: 0.875rem;
+      margin-left: 20px;
+      padding: 10px 0;
+
+      @include media-breakpoint-down(lg) {
+        padding-top: 20px;
+      }
+    }
+
+    .icon-lgbtq::before {
+      background-size: contain;
+      background: url("../../../images/icons/lgbti.svg") no-repeat center center;
+      content: '';
+      display: inline-block;
+      height: 15px;
+      margin-right: 5px;
+      width: 20px;
+    }
+
+    .icon-world::before {
+      content: '';
+      background-size: contain;
+      background: url("../../../images/icons/globo.svg") no-repeat center center;
+      display: inline-block;
+      height: 15px;
+      margin-right: 5px;
+      width: 20px;
+    }
+
+    .icon-women-science::before {
+      content: '';
+      background-size: contain;
+      background: url("../../../images/icons/umeci.svg") no-repeat center center;
+      display: inline-block;
+      height: 15px;
+      margin-right: 5px;
+      width: 30px;
+    }
+  }
+}

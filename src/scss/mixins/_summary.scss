@@ -1,0 +1,8 @@
+@mixin text-summary {
+  border-bottom: 1px solid $gray-200;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-top: 0.25rem;
+  overflow: hidden;
+}

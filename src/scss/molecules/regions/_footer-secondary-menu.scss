@@ -1,0 +1,23 @@
+.footer-secondary-menu {
+  .region-footer-secondary-menu {
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+
+    @include media-breakpoint-down(md) {
+      align-items: center;
+    }
+
+    .menu--footer-menu {
+      flex: 8;
+    }
+    .menu--interest-links {
+      flex: 2;
+    }
+  }
+}

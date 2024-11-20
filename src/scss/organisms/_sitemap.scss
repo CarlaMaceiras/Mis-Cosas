@@ -1,0 +1,95 @@
+.path-sitemap {
+  .sitemap {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sitemap-item {
+      h2 {
+        text-align: left;
+      }
+
+      ul {
+        padding-left: 0;
+        @include media-breakpoint-up(lg) {
+          padding-left: 2rem;
+        }
+
+        li {
+          border-left: 2px solid $blue-200;
+          display: block;
+          padding-bottom: 0.5rem;
+          padding-left: 1.5rem;
+          position: relative;
+
+          @include media-breakpoint-up(lg) {
+            padding-left: 2.5rem;
+          }
+
+          &:last-child {
+            border-left-color: transparent;
+          }
+
+          &:hover {
+            &:after {
+              background: $blue;
+            }
+          }
+
+          &:before {
+            border: solid $blue-200;
+            border-width: 0 0 2px 2px;
+            content: '';
+            display: block;
+            height: 1rem;
+            left: -0.1rem;
+            position: absolute;
+            top: -0.25rem;
+            width: 0.75rem;
+
+            @include media-breakpoint-up(lg) {
+              width: 1rem;
+            }
+          }
+
+          &:after {
+            background: $blue-500;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            height: 0.75rem;
+            left: 0.5rem;
+            position: absolute;
+            top: 0.25em;
+            width: 0.75rem;
+
+            @include media-breakpoint-up(lg) {
+              height: 1.25rem;
+              left: 0.75rem;
+              top: 0.1em;
+              width: 1.25rem;
+            }
+          }
+
+          ul {
+            font-size: $font-size-base * 0.9;
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+          }
+        }
+      }
+
+      div > ul > li:first-child::before {
+        border-left-color: $white;
+      }
+
+      div > ul > li > a:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

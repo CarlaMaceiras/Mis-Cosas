@@ -1,0 +1,15 @@
+@mixin afterBackground($color: $white) {
+  position: relative;
+
+  &:after {
+    background-color: $color;
+    content: "";
+    height: 100%;
+    left: 50%;
+    margin-left: -50vw;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+}

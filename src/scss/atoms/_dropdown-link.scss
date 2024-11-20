@@ -1,0 +1,23 @@
+.dropdown-link {
+  color: $navbar-dark-color;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+
+  .bi-chevron-down {
+    display: inline;
+  }
+
+  .bi-chevron-up {
+    display: none;
+  }
+
+  &.show {
+    .bi-chevron-down {
+      display: none;
+    }
+
+    .bi-chevron-up {
+      display: inline;
+    }
+  }
+}

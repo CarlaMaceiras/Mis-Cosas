@@ -1,0 +1,38 @@
+blockquote {
+  background-color: $blue-100;
+  border-radius: $border-radius;
+  cursor: default;
+  font-size: $font-size-base * 1.1;
+  font-weight: bold;
+  margin: 2.25rem 1.5rem;
+  padding: 2rem 2rem 0.5rem;
+  position: relative;
+  text-align: center;
+  transition: $transition-base;
+
+  @include media-breakpoint-up(lg) {
+    margin: 2.25rem 5rem;
+  }
+
+  &:before,
+  &:after {
+    background-color: $blue-200;
+    border-radius: 6px;
+    content: " ";
+    display: block;
+    height: 6px;
+    position: absolute;
+    transition: $transition-base;
+    width: 200px;
+  }
+
+  &:before {
+    left: 0;
+    top: -0.75rem;
+  }
+
+  &:after {
+    bottom: -0.75rem;
+    right: 0;
+  }
+}

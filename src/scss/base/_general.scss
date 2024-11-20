@@ -1,0 +1,58 @@
+body {
+  overflow-x: hidden;
+
+  .container-fluid {
+    @include container;
+  }
+
+  main {
+    .main-content {
+      > .region,
+      .region-content > *:not(.block-system-main-block) {
+        @include container;
+      }
+
+      .region-content {
+        > .block-system-main-block {
+          > *:not(article) {
+            @include container;
+          }
+
+          > article.node--view-mode-full {
+            &:not(.node--type-landing) {
+              @include container;
+            }
+
+            &.node--type-landing {
+              > .node__content {
+                > .field--name-body {
+                  @include container;
+                }
+
+                .layout-main-content {
+                  > .layout__region--content {
+                    > .block:not([class*="sections"]) {
+                      @include container;
+                    }
+                  }
+                }
+
+                .field--name-field-sections {
+                  > .field__item {
+                    &:has(> .paragraph:not(.paragraph--type--slider)) {
+                      @include container;
+                    }
+
+                    &.paragraph--type--groups-banners {
+                      @include container;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
